@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Culture</title>
+    <style>
+	body {
+        background-color: #f5f5f5;
+    }
+    
+    .background-image {
+        background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-c4d-indoor-garage-display-car-scene-image_258567.jpg');
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 1200px; /* adjust the max-width to control the number of columns */
+  margin: 0 auto; /* center the container */
+}
+
+.card {
+  width: calc(25% - 20px); /* adjust the width to fit 4 columns */
+  margin: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+    
+    .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .card-details {
+        padding: 20px;
+        display: none;
+    }
+    
+    .card:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card:hover .card-details {
+        display: block;
+    }
+  </style>
+</head>
+<body>
+	<div class="background-image"></div>
+	<div class="card-container">
+		<div class="card" id="card-1">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/1919_Ford_Model_T_Highboy_Coupe.jpg/330px-1919_Ford_Model_T_Highboy_Coupe.jpg" alt="Image 1">
+			<div class="card-details">
+				<h2>1919 Ford Model T coupe</h2>
+				
+			</div>
+		</div>
+		<div class="card" id="card-2">
+			<img src="https://hips.hearstapps.com/toc.h-cdn.co/assets/16/14/3200x1655/1954-mercedes-300sl-gullwing-a_1.jpg?resize=980:*" alt="Image 2">
+			<div class="card-details">
+				<h2>Mercedes SL 300 Gullwing</h2>
+				
+			</div>
+		</div>
+		<div class="card" id="card-3">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/1921_Hudson_Phaeton_AACA_Iowa_2012_fr.jpg/330px-1921_Hudson_Phaeton_AACA_Iowa_2012_fr.jpg" alt="Image 2">
+			<div class="card-details">
+				<h2>1921 Hudson Super Six phaeton</h2>
+				
+			</div>
+		</div>
+		<div class="card" id="card-4">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/1925_Flint.jpg/330px-1925_Flint.jpg" alt="Image 2">
+			<div class="card-details">
+				<h2>A restored 1925 Flint touring car (U.S.A.) at a rally in Australia</h2>
+				
+			</div>
+		</div>
+		<div class="card" id="card-5">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/1929_PIERCE-ARROW.jpg/330px-1929_PIERCE-ARROW.jpg" alt="Image 2">
+			<div class="card-details">
+				<h2>1929 Pierce-Arrow</h2>
+				
+			</div>
+		</div>
+		<div class="card" id="card-6">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/1930_Cadillac_452_V16_Fleetwood_Sport_Phaeton_%283828514399%29.jpg/330px-1930_Cadillac_452_V16_Fleetwood_Sport_Phaeton_%283828514399%29.jpg" alt="Image 2">
+			<div class="card-details">
+				<h2>1930 Cadillac V-16 452 Sport series phaeton</h2>
+				
+			</div>
+		</div>
+		<div class="card" id="card-7">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/The_1951_Cadillac_Classic.jpg/330px-The_1951_Cadillac_Classic.jpg" alt="Image 2">
+			<div class="card-details">
+				<h2>The 1951 Cadillac Classic used by the then Saudi King</h2>
+				
+			</div>
+		</div>
+		<div class="card" id="card-8">
+			<img src="https://hips.hearstapps.com/toc.h-cdn.co/assets/16/14/4000x2656/1968-jaguar-e-type_1.jpg?resize=980:*" alt="Image 2">
+			<div class="card-details">
+				<h2>Jaguar E-Type</h2>
+				
+			</div>
+		</div>
+		<div class="card" id="card-9">
+			<img src="https://hips.hearstapps.com/toc.h-cdn.co/assets/16/14/2560x1906/1968-chevrolet-corvette_1.jpg?resize=980:*" alt="Image 2">
+			<div class="card-details">
+				<h2>Chevrolet Corvette</h2>
+				
+			</div>
+		</div>
+		<div class="card" id="card-10">
+			<img src="https://hips.hearstapps.com/toc.h-cdn.co/assets/16/14/3200x2136/1971-lamborghini-miura-sv_1.jpg?resize=980:*" alt="Image 2">
+			<div class="card-details">
+				<h2>Lamborghini Miura</h2>
+				
+			</div>
+		</div>
+		<div class="card" id="card-11">
+			<img src="https://hips.hearstapps.com/toc.h-cdn.co/assets/16/14/1024x577/1967-porsche-911-r_1.jpg?resize=980:*" alt="Image 2">
+			<div class="card-details">
+				<h2>Porsche 911</h2>
+				
+			</div>
+		</div>
+		
+		<div class="card" id="card-12">
+			<img src="https://hips.hearstapps.com/toc.h-cdn.co/assets/16/14/4000x2591/1952-rolls-royce-silver-dawn_1.jpg?resize=980:*" alt="Image 12">
+			<div class="card-details">
+				<h2>Rolls-Royce Dawn Drophead</h2>
+			
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js">
+        const cards = document.querySelectorAll('.card');
+
+cards.forEach((card) => {
+  card.addEventListener('click', () => {
+    const cardDetails = card.querySelector('.card-details');
+    cardDetails.style.display = cardDetails.style.display === 'block' ? 'none' : 'block';
+  });
+});
+    </script>
+</body>
+</html>
